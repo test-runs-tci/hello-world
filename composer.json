@@ -12,6 +12,7 @@
         "psr-4": { "Rivsen\\Demo\\": "src" }
     },
     "require": {
+        "p2/athletic": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "algolia/algoliasearch-client-php": "^3.0",

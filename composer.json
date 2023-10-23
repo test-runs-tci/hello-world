@@ -23,5 +23,8 @@
         "doctrine/common": "^3",
         "doctrine/doctrine-bundle": "^2.2",
         "doctrine/orm": "^2.7"
+    },
+    "require-dev": {
+        "athletic/athletic": "~0.1"
     }
 }

@@ -3,8 +3,7 @@ language: php
 php: 8.0
 install: composer install
 script:
-  - composer require athletic/athletic:~0.1 --dev
-  - cat composer.json
+  - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
   - php test.php
 
 jobs:

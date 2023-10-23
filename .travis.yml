@@ -4,6 +4,7 @@ php: 8.0
 install: composer install
 script:
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
+  - cat composer.lock
   - php test.php
 
 jobs:

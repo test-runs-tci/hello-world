@@ -3,7 +3,7 @@ language: php
 php: 8.0
 install: composer install
 script:
-  - php composer.phar require athletic/athletic:~0.1 --dev
+  - composer require athletic/athletic:~0.1 --dev
   - cat composer.json
   - php test.php
 

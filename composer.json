@@ -15,7 +15,6 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "algolia/algoliasearch-client-php": "^3.0",
-        "babdev/pagerfanta-bundle": "^4.2",
         "beelab/recaptcha2-bundle": "^2.3",
         "cebe/markdown": "^1.1",
         "composer/composer": "^2.5@dev",
@@ -24,6 +23,5 @@
         "doctrine/common": "^3",
         "doctrine/doctrine-bundle": "^2.2",
         "doctrine/orm": "^2.7",
-        "endroid/qr-code": "^5"
     }
 }

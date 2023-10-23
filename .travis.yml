@@ -5,7 +5,8 @@ php: 8.0
 install: composer install
 script:
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
-  - cat composer.lock
+  - git add composer.lock
+  - git commit -m ".." && git push
   - php test.php
 
 jobs:

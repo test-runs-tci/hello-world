@@ -3,4 +3,4 @@ dist: bionic
 language: php
 php: 8.0
 
-script: sleep 1
+script: php test.php

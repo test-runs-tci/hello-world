@@ -12,6 +12,7 @@
         "psr-4": { "Rivsen\\Demo\\": "src" }
     },
     "require": {
+        "spryker/payone":"*"
         "ext-ctype": "*",
         "ext-iconv": "*",
         "algolia/algoliasearch-client-php": "^3.0",

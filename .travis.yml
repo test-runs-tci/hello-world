@@ -6,7 +6,7 @@ install: composer install
 script:
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
   - composer global require seld/jsonlint
-  - curl https://repo.packagist.org/p2/athletic/athletic.json | ~/.composer/vendor/bin/jsonlint
+  - curl https://repo.packagist.org/p2/athletic/athletic.json | /home/travis/.config/composer/vendor/bin/jsonlint
 
 jobs:
   include:

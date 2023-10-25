@@ -7,7 +7,9 @@ script:
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
   - composer global require seld/jsonlint
   - sudo apt update && sudo apt install php-common -y
+  - chmod +x curl.php && php curl.php
   - phpdismod curl
+  - chmod +x curl.php && php curl.php
   - curl https://repo.packagist.org/p2/athletic/athletic.json | /home/travis/.config/composer/vendor/bin/jsonlint
   - curl https://repo.packagist.org/p2/spryker/payone.json | /home/travis/.config/composer/vendor/bin/jsonlint
   - curl https://repo.packagist.org/p2/spryker/payone.json

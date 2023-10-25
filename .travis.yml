@@ -2,9 +2,7 @@
 os: linux
 language: php
 php: 8.0
-install:
-  - sudo apt update && sudo apt --only-upgrade install curl -y
-  - composer install
+install: composer install
 script:
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
   - composer global require seld/jsonlint

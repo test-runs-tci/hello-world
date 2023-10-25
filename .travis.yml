@@ -4,7 +4,7 @@ language: php
 php: 8.0
 install: composer install
 script:
-  - sudo apt update && sudo apt upgrade curl -y
+  - sudo apt update && sudo apt --only-upgrade install curl -y
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
   - composer global require seld/jsonlint
   - curl https://repo.packagist.org/p2/athletic/athletic.json | /home/travis/.config/composer/vendor/bin/jsonlint

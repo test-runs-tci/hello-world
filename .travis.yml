@@ -2,12 +2,12 @@
 os: linux
 language: php
 php: 8.0
-install: composer install --no-cache
+install: composer install
 script:
   - COMPOSER_MEMORY_LIMIT=-1 composer update --prefer-lowest --no-interaction --prefer-install=auto --quiet
   - composer global require seld/jsonlint
   - curl https://repo.packagist.org/p2/athletic/athletic.json | /home/travis/.config/composer/vendor/bin/jsonlint
-  #- curl https://repo.packagist.org/p2/spryker/payone.json | /home/travis/.config/composer/vendor/bin/jsonlint
+  - curl https://repo.packagist.org/p2/spryker/payone.json | /home/travis/.config/composer/vendor/bin/jsonlint
   - curl https://repo.packagist.org/p2/spryker/payone.json
   - wget https://repo.packagist.org/p2/athletic/athletic.json
   - wget https://repo.packagist.org/p2/spryker/payone.json
